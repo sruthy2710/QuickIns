@@ -83,11 +83,19 @@
     <section class="email">
       <div class="container-fluid3">
         <h1 class="directly-email" >Directly Email to us. </h1>
-        <h3>ssruthi10@gmail.com  <button type="button" class="btn btn-primary btn-sm other1"><i class="far fa-clone"></i></button>
+        <input id="cpy" value="ssruthi10@gmail.com "> <button  type="button" onClick="copy()" class="btn btn-primary btn-sm other1"><i class="far fa-clone"></i></button>
  </h3>
 
       </div>
     </section>
+    <script >
+      function copy(){
+        var copyText = document.getElementById("cpy");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+      }
+    </script>
 
     <section>
       <div class="container-fluid">
